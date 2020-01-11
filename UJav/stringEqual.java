@@ -19,7 +19,7 @@ public class stringEqual {
         }
 
         else {
-            System.out.println("Sorry, no can do.");
+            System.out.println("Sorry, no can do.\n");
         }
 
     }
