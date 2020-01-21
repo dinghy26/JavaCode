@@ -1,3 +1,11 @@
+
+/**
+* File: bugCode.java
+* Author: Brian Miranda Perez
+* Date: January 20, 2020
+* Purpose: if else practice
+*/
+// Import java class
 import java.util.Scanner;
 
 public class bugCode {
@@ -7,10 +15,12 @@ public class bugCode {
         // scanner for users input
         Scanner bugScanner = new Scanner(System.in);
 
+        // prompt users to enter they age.
         System.out.println("Welcome the online Bar!");
-        System.out.println("How older you?");
+        System.out.println("How old are you?");
         userAge = bugScanner.nextInt();
 
+        // if else statement to ver. the users age.
         if (userAge >= 21) {
             System.out.println("You are allowed to buy in this online store!");
             // nested if statement for a senior discount
