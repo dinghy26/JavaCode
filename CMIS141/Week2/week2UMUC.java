@@ -58,5 +58,8 @@ public class week2UMUC {
         System.out.format("Temperature in Celsius: %.2f%c\n", tempCelsius, DEGREE);
         System.out.format("Temperature in Fahrenheit:` %.2f%c\n", celsiusToFahr, DEGREE);
 
+        // close the Scanner
+        myScaner.close();
+
     }
 }
