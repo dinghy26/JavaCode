@@ -2,7 +2,9 @@
 * File: Week2UMUC.java
 * Author: Brian Miranda Perez
 * Date: January 20, 2020
-* Purpose: ???
+* Purpose: This program will calculate the average
+* of 3 Quizzes and convert age in Months to years 
+* and to finalize it will convert Celsius to Fahr.
 */
 
 // Import required Java class
@@ -56,7 +58,7 @@ public class week2UMUC {
         System.out.format("Age in Months: %d\n", ageMonths);
         System.out.format("Age in years: %d\n", montsToYears);
         System.out.format("Temperature in Celsius: %.2f%c\n", tempCelsius, DEGREE);
-        System.out.format("Temperature in Fahrenheit:` %.2f%c\n", celsiusToFahr, DEGREE);
+        System.out.format("Temperature in Fahrenheit: %.2f%c\n", celsiusToFahr, DEGREE);
 
         // close the Scanner
         myScaner.close();
