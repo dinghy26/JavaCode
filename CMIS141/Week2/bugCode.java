@@ -22,6 +22,7 @@ public class bugCode {
         else {
             System.out.println("Sorry, you can't buy alcohol beverages.");
         }
-
+        // Close scanner
+        bugScanner.close();
     }
 }
