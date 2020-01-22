@@ -25,7 +25,7 @@ public class week2UMUC {
         double quizzAvrg = 0.0;
         final char DEGREE = '\u00B0'; // Degrees Symbol unicode character
 
-        // scanner class name myScaner to receive users input
+        // Scanner class name myScaner to receive users input
         Scanner myScaner = new Scanner(System.in);
 
         // User id #.
@@ -49,9 +49,9 @@ public class week2UMUC {
         System.out.print("Enter the current Temperature in Celsius: ");
         tempCelsius = myScaner.nextDouble();
 
-        // this is the calculations for the final output
+        // This is the calculations for the final output
         quizzAvrg = (userQ1 + userQ2 + userQ3) / 3; // calculate avrg. of 3 quizzes
-        monthsToYears = ageMonths / 12; // convert age in months to years
+        monthsToYears = ageMonths / 12; // convert age from months to years
         celsiusToFahr = (tempCelsius * 9 / 5) + 32; // convertion from celcius to Fahrenheit
 
         // Final output prompt
@@ -66,7 +66,7 @@ public class week2UMUC {
         System.out.format("Temperature in Celsius: %.1f%c\n", tempCelsius, DEGREE);
         System.out.format("Temperature in Fahrenheit: %.1f%c\n", celsiusToFahr, DEGREE);
 
-        // close the Scanner class
+        // Close the Scanner class
         myScaner.close();
 
     }
