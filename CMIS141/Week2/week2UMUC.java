@@ -23,16 +23,16 @@ public class week2UMUC {
         double userQ2 = 0.0;
         double userQ3 = 0.0;
         double quizzAvrg = 0.0;
-        final char DEGREE = '\u00B0'; // Degrees Symbol unicode character.
+        final char DEGREE = '\u00B0'; // Degrees Symbol unicode character
 
-        // scanner class name myScaner to receive users input.
+        // scanner class name myScaner to receive users input
         Scanner myScaner = new Scanner(System.in);
 
         // User id #.
         System.out.print("Please enter you'r User ID (0 - 999999):");
         userID = myScaner.nextInt();
 
-        // Promt the user to enter score for 3 Quizzes.
+        // Promt the user to enter score for 3 Quizzes
         System.out.println("Please enter Quiz 1 to 3 scores (0.0 - 100.0):");
         System.out.print("Quiz 1: ");
         userQ1 = myScaner.nextDouble();
@@ -45,16 +45,16 @@ public class week2UMUC {
         System.out.print("Enter your age in months (0 - 1440):");
         ageMonths = myScaner.nextInt();
 
-        // Prompt user to enter temp. ins Celsius.
+        // Prompt user to enter temp. ins Celsius
         System.out.print("Enter the current Temperature in Celsius: ");
         tempCelsius = myScaner.nextDouble();
 
         // this is the calculations for the final output
-        quizzAvrg = (userQ1 + userQ2 + userQ3) / 3; // calculate avrg. of 3 quizzes.extends
-        monthsToYears = ageMonths / 12; // convert age in months to years.
-        celsiusToFahr = (tempCelsius * 9 / 5) + 32; // convertion from celcius to Fahrenheit.
+        quizzAvrg = (userQ1 + userQ2 + userQ3) / 3; // calculate avrg. of 3 quizzes
+        monthsToYears = ageMonths / 12; // convert age in months to years
+        celsiusToFahr = (tempCelsius * 9 / 5) + 32; // convertion from celcius to Fahrenheit
 
-        // Final output prompt.
+        // Final output prompt
         System.out.println("\n*** Thank You ***");
         System.out.format("Student EMPLYID: %d\n", userID);
         System.out.format("Quiz 1 score: %.1f\n", userQ1);
@@ -66,7 +66,7 @@ public class week2UMUC {
         System.out.format("Temperature in Celsius: %.1f%c\n", tempCelsius, DEGREE);
         System.out.format("Temperature in Fahrenheit: %.1f%c\n", celsiusToFahr, DEGREE);
 
-        // close the Scanner
+        // close the Scanner class
         myScaner.close();
 
     }
