@@ -39,7 +39,7 @@ public class Week3Loop {
             System.out.format("\nPlease enter the student name and the %d scores:\n", testAmount);
             System.out.print("Student name: ");
             stdName = myScanner.nextLine();
-            sum = 0;
+            sum = 0; // reset the sum to 0 after the firt student
 
             // Nested for loop for taking the scores of the students
             for (int k = 0; k < testAmount; k++) {
