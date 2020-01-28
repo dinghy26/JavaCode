@@ -51,6 +51,13 @@ public class Week3Loop {
 
             // Perform the average calculation
             avrg = sum / testAmount;
+
+            // if statement added by Sebastian Zawadzki
+            if (avrg >= 70.0)
+                System.out.println("Passed.");
+            else
+                System.out.println("Failed.");
+
             // prompt the user with the name of the student and the average
             System.out.format("%s average is: %.1f\n", stdName, avrg);
         }
