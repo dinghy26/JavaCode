@@ -3,7 +3,7 @@
 * Author: Brian Miranda Perez
 * Date: february 3, 2020
 * Purpose: This Program is a basic calculator that 
-* lets you pic wich Math you want to perform. Is a single class with 2 Methods. 
+* lets you pic wich Math you want to perform. Is a single class with 3 Methods. 
 */
 
 import java.util.Scanner;
