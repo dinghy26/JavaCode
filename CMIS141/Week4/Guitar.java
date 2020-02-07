@@ -71,7 +71,7 @@ public class Guitar {
         char[] notesLet = {'A','B','C','D','E','F','G'};
         String [] notesNum = {".25", ".5", "1", "2", "3", "4"};
 
-        // for loop to iterate insight of the arrays
+        // for loop to iterate inside of the arrays
         for (int i = 0; i < 16; i++) {
             
             int let = notesRand.nextInt(7);
@@ -80,7 +80,7 @@ public class Guitar {
             System.out.print(notesLet[let]);
             System.out.format("(%s)", notesNum[num]);
 
-            // if statement foor punctuation
+            // if statement for punctuation
             if (i < 15) {
             System.out.print(", ");
 
