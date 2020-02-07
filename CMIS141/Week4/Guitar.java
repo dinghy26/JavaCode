@@ -80,7 +80,7 @@ public class Guitar {
             System.out.print(notesLet[let]);
             System.out.format("(%s)", notesNum[num]);
 
-            // ii statement foor punctuation
+            // if statement foor punctuation
             if (i < 15) {
             System.out.print(", ");
 
