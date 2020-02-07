@@ -1,3 +1,10 @@
+/**
+* File: GuitarTest.java
+* Author: Brian Miranda Perez
+* Date: February 6, 2020
+* This program will build instances of the class Guitar using 
+* the constructors' insight the program Guitar.java. 
+*/
 import java.util.Scanner;
 
 
@@ -34,6 +41,7 @@ public class GuitarTest {
 
         System.out.println("\n ********************************************************** \n");
         
+        // Guitar Default output
         Guitar defaults = new Guitar();
 
         System.out.println(">>>>>>>>>>> Default Values <<<<<<<<<<<<");
