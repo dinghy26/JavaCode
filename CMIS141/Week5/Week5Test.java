@@ -2,7 +2,11 @@
 * File: Week5Test.java
 * Author: Brian Miranda Perez
 * Date: February 10, 2020
-* This code will create
+* This code will create an array using the user's size input
+* and use that to create a random list of numbers from o to 100.
+* It will print the position and the random number in that position
+* and will notify the user of how many values are in the array.
+* To Finish, it will sort the array and place the random values in a new position.
 */
 
 import java.util.Scanner;
