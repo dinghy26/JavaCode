@@ -8,7 +8,7 @@
 import java.util.Scanner;
 
 
-public class GuitarTest {
+public class TestGuitar {
 
     public static void main (String[] args) {
         
@@ -21,22 +21,22 @@ public class GuitarTest {
         System.out.print("Enter Guitar size: ");
         Double size = myScanner.nextDouble();
         myScanner.nextLine();// Clear the Buffer
-        System.out.print("Enter Manufacture: ");
+        System.out.print("Enter Manufacturer: ");
         String builder = myScanner.nextLine();
         System.out.print("Enter Color: ");
         String color = myScanner.nextLine();
 
-        // Build Cunstructor that takes values Name fender
-        Guitar fender = new Guitar(strings, size, builder,color);
+        // Build Cunstructor that takes values Name guitarInput
+        Guitar guitarInput = new Guitar(strings, size, builder,color);
 
         System.out.println("\n ************************************************************");
-        System.out.println(fender.toString());
-        System.out.println("getString() = " + fender.getString());
-        System.out.println("getLength() = " + fender.getLength());
-        System.out.println("getManufacture() = " + fender.getManufacture());
-        System.out.println("getColor() = " + fender.getColor());
+        System.out.println(guitarInput.toString());
+        System.out.println("getString() = " + guitarInput.getString());
+        System.out.println("getLength() = " + guitarInput.getLength());
+        System.out.println("getManufacturer() = " + guitarInput.getManufacturer());
+        System.out.println("getColor() = " + guitarInput.getColor());
         System.out.print("playGuitar() = ");
-        fender.playGuitar();
+        guitarInput.playGuitar();
         System.out.println(" ");
 
         System.out.println("\n ********************************************************** \n");
@@ -48,7 +48,7 @@ public class GuitarTest {
         System.out.println(defaults.toString());
         System.out.println("getString() = " + defaults.getString());
         System.out.println("getLength() = " + defaults.getLength());
-        System.out.println("getManufacture() = " + defaults.getManufacture());
+        System.out.println("getManufacturer() = " + defaults.getManufacturer());
         System.out.println("getColor() = " + defaults.getColor());
 
         // Close Scanner

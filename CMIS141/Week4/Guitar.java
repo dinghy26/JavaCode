@@ -46,7 +46,7 @@ public class Guitar {
         return this.guitarLength;
     }
 
-    public String getManufacture () {
+    public String getManufacturer () {
         return this.guitarManufacturer;
     }
 
