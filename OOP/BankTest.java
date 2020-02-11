@@ -10,5 +10,8 @@ public class BankTest {
         bank.witdr(50);
         System.out.println("your balance is " + bank.getBal());
 
+        bank.witdr(20);
+        System.out.println("your balance is " + bank.getBal());
+
     }
 }
