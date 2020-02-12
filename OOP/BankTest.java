@@ -2,16 +2,20 @@ public class BankTest {
 
     public static void main(String[] args) {
         
-        BankCl bank = new BankCl();
+       BankCl joe = new BankCl();//("1234", 200.0, "bMir", "ding@gmail.com", "787-914-1538");
+       System.out.println(joe.GetActNum());
+       System.out.println(joe.getBal());
+       System.out.println(joe.getName());
+       
 
-        bank.deposit(200.0);
-        System.out.println("your balance is " + bank.getBal());
+        //BankCl bank = new BankCl();
 
-        bank.witdr(50);
-        System.out.println("your balance is " + bank.getBal());
 
-        bank.witdr(20);
-        System.out.println("your balance is " + bank.getBal());
+        //bank.deposit(200.0);
+
+        //bank.witdr(50);
+
+        //bank.witdr(152);
 
     }
 }
