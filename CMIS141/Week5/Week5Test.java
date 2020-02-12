@@ -30,11 +30,31 @@ public class Week5Test {
         int [] theArray = new int[arraySize];
 
         for (int i = 0; i < theArray.length; i++) {
-            theArray [i] = (int) (Math.random() * 100);
-            
-            System.out.format("The Value of position [%d] = %d \n", i, theArray[i]);
+            theArray [i] = (int) (Math.random() * 101);
+            System.out.println(theArray[i]);
+
+            if (i > 0) {
+                for(int z = 0; z < i; z++) {
+
+                    //check for duplications
+                    if (theArray[z] == theArray[i]) {
+                        System.out.format("theArray[z] = %d and thArray[i] = %d in the position [%d] \n",theArray[z] ,theArray[i], z);
+                        System.out.println("The values of i is " + i + " before i-- ");
+                        i--; // will set i to the prior iteration and run the math.random again to replace the num. 
+                        System.out.println("The values of i is " + i + " before i-- ");
+                }
+            }
+        }
+
+
+            //System.out.format("The Value of position [%d] = %d \n", i, theArray[i]);
+        }
+
+        for (int a = 0; a < theArray.length; a++) {
+            System.out.format("The Value of position [%d] = %d \n", a, theArray[a]);
 
         }
+        
 
         // Print the size of the array
         System.out.format("\nThis Array have %d Values.\n", theArray.length);
