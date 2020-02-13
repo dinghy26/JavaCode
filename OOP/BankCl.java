@@ -11,7 +11,8 @@ public class BankCl {
         this("12345678", 2.0, "user name", "@gmail.com", "555-555-5555");
         System.out.println("Empty constructor Called");
     }
-    public BankCl (String number, double balance, String names, String email, String pnum) {
+
+    public BankCl(String number, double balance, String names, String email, String pnum) {
 
         System.out.println("Account constructor with parameters called");
         this.actNum = number;
@@ -21,14 +22,18 @@ public class BankCl {
         this.userPnumber = pnum;
     }
 
+    public BankCl(String userName, String userEmail, String userPnumber) {
+        this("99999", 100.55, userName, userEmail,  userPnumber);
+    }
+
 
     public void deposit(double founds) {
         this.actBalance += founds;
         System.out.println("Deposit of " + founds + " made. New Balance is " + this.actBalance);
     }
 
-    public void witdr (double removeFounds) {
-        if (this.actBalance - removeFounds < 0){
+    public void witdr(double removeFounds) {
+        if (this.actBalance - removeFounds < 0) {
             System.out.println(" The Balance is " + this.actBalance + " transaction cancel");
         } else {
             this.actBalance -= removeFounds;
@@ -38,7 +43,7 @@ public class BankCl {
 
     // get/set User ACT.
     public void setAct(String act) {
-        this.actNum = act;  
+        this.actNum = act;
     }
 
     public String GetActNum() {
@@ -80,5 +85,6 @@ public class BankCl {
     public String getPnum() {
         return userPnumber;
     }
+
 
 }
