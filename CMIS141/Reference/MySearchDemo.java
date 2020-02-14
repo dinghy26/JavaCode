@@ -63,7 +63,11 @@ static final int ARRAYSIZE = 20;
 	   System.out.println("No value was found");	
 	}
 
-    }
+	scannerIn.close();
+
+	}
+	
+
    
     
    

@@ -9,7 +9,7 @@
 // Import the Random
 import java.util.Random;
 
-public class MyArrayDemo {  
+public class MyArrayDemoResult {  
 // Define constant array size
 static final int INTARRAYSIZE = 50;
 static final int BOOLEANARRAYSIZE = 100;
