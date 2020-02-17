@@ -1,8 +1,8 @@
 /** File: EcoVacs.java
 * Author: Brian Miranda Perez
 * Date: February 17, 2020
-* This class stores all the values for a 
-* smart Vacum. 
+* This class stores all the values for 
+* the creation of a Smart Vacuum. 
 */
 
 public class EcoVacs {
@@ -26,7 +26,7 @@ public class EcoVacs {
     }
     // Method for print the fild values in a string
     public String toString() {
-        return "The Vac # of Brushes = " + getBrush() + "\n" + "The Vac serial name = " + getVacName()
+        return "The Vac # of Brushes = " + getBrush() + "\n" + "The Vac serial Name = " + getVacName()
         + "\n" + "The Vac is on? " + isOnOff();   
     }
 

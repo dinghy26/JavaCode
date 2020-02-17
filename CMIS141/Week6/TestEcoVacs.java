@@ -3,7 +3,7 @@
 * Date: February 17, 2020
 * This Main class creates instances and
 * Call all the values for a 
-* smart Vacum. 
+* smart Vacuum. 
 */
 
 public class TestEcoVacs {
@@ -35,7 +35,7 @@ public class TestEcoVacs {
         c34.onOff();
         System.out.println("**********\n");
         System.out.println("The Vac # of Brushes = " + c34.getBrush());
-        System.out.println("The Vac serial name = " + c34.getVacName());
+        System.out.println("The Vac serial Name = " + c34.getVacName());
         System.out.println("The Vac is on? " + c34.isOnOff());
         System.out.println("\n ***************************** \n");
 
