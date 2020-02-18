@@ -1,32 +1,37 @@
 import java.awt.Color;
+import java.util.Random;
 
 public class TestHeadPhone {
 
     public static void main(String[] args) {
         
-        HeadPhones [] musicH = new HeadPhones [2];
+        // Random instance
+        Random randit = new Random();
 
-        musicH [0] = new HeadPhones();
-        musicH [1] = new HeadPhones(3,true, "sony",Color.GREEN);
+        // headphones Sony With default values
+        HeadPhones sony = new HeadPhones();
 
-        for (int i = 0; i < musicH.length; i++) {
-            System.out.format("the volume is %d \n", musicH[i].getVolume());
+        System.out.println("\n"+sony.testPluggedIn());
+        System.out.println(sony.toString());
+        int randomSony = randit.nextInt(6);
+        System.out.format("The new Set volume is: %d \n", randomSony);
+        System.out.println("***************************\n");
 
-            if (musicH[i].isPluggedIn()== true) {
-                System.out.println(" the head phones are Pluged-in");
-            } else {
-                System.out.println(" the head phones are NOT Pluged-in");
-            }
+        HeadPhones airPods =  new HeadPhones(3, true, "Apple", Color.WHITE);
 
-            System.out.format("The Head Phones Brand is %s\n", musicH[i].getManufacture());
-            System.out.format("The Head Phones color is %s\n", musicH[i].getHeadPhoneColor());
-            System.out.println(musicH[i].toString()+"\n");
-            //int randit = (int)(Math.random() * 5);
-            musicH[i].changeVolume((int)(Math.random() * 10));
-            System.out.println(musicH[i].toString());
-            System.out.println("\n************************************\n");
+        System.out.println(airPods.testPluggedIn());
+        System.out.println(airPods.toString());
+        int randomAir = randit.nextInt(7);
+        System.out.format("The new Set volume is: %d \n", randomAir);
+        System.out.println("***************************\n");
 
-        }
+        HeadPhones bose = new HeadPhones("Bose", Color.RED);
+
+        System.out.println(bose.testPluggedIn());
+        System.out.println(bose.toString());
+        int randomBose = randit.nextInt(7);
+        System.out.format("The new Set volume is: %d \n", randomBose);
+        System.out.println("***************************\n");
 
     }
 }
