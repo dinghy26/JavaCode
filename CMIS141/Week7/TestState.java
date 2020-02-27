@@ -5,8 +5,6 @@ public class TestState {
 
     public static void main(String[] args) {
 
-        // String ver = null;
-
         Scanner myScanner = new Scanner(System.in);
 
         StateData string = new StateData();
@@ -18,7 +16,6 @@ public class TestState {
             ver = myScanner.nextLine().trim().toUpperCase();
             string.getStates(ver);
 
-            // System.out.println(string.toString());
 
             if ("NONE".equals(ver)) {
                 System.out.println("You entered " + ver);
@@ -26,17 +23,14 @@ public class TestState {
                 System.out.println("\nA summary report for each State, Bird, and Flower is:");
                 // string.getArg();
                 string.getset();
-                // System.out.println(string.toString());
                 break;
 
             }
-            // myScanner.close();
 
         }
 
         StateData states1 = new StateData();
 
-        // Scanner scState1 = new Scanner(System.in);
         String state1Var = null;
         System.out.println("\nState1 Instance:");
 
@@ -46,7 +40,6 @@ public class TestState {
             state1Var = myScanner.nextLine().trim().toUpperCase();
             states1.getStates(state1Var);
 
-            // System.out.println(string.toString());
 
             if ("NONE".equals(state1Var)) {
                 System.out.println("You entered " + state1Var);
@@ -54,7 +47,6 @@ public class TestState {
                 System.out.println("\nA summary report for each State, Bird, and Flower is:");
                 // string.getArg();
                 states1.getset();
-                // System.out.println(string.toString());
                 break;
 
             }
